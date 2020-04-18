@@ -999,3 +999,22 @@ Caused by: java.util.NoSuchElementException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2020-04-18 14:01:30.838
 !MESSAGE The POM for com.sun.xml.bind:jaxb-core:jar:2.2.11 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-04-18 14:13:01.948
+!MESSAGE Unable to update index for central|https://repo.maven.apache.org/maven2: C:\Users\Administrator\.m2\repository\.cache\m2e\1.15.0\05b0fe8524860bd73cbb07ef30fb34cc\nexus-maven-repository-index.zip (The system cannot find the file specified)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\Administrator\.m2\repository\.cache\m2e\1.15.0\05b0fe8524860bd73cbb07ef30fb34cc\nexus-maven-repository-index.zip (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at org.apache.maven.index.updater.DefaultIndexUpdater$FileFetcher.retrieve(DefaultIndexUpdater.java:568)
+	at org.apache.maven.index.updater.DefaultIndexUpdater.loadIndexDirectory(DefaultIndexUpdater.java:206)
+	at org.apache.maven.index.updater.DefaultIndexUpdater.access$300(DefaultIndexUpdater.java:75)
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LuceneIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:645)
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:844)
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:156)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1138)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1082)
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.lambda$0(NexusIndexManager.java:656)
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

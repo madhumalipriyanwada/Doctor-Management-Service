@@ -18,7 +18,7 @@ public class DoctorRepository {
 		
 		try {
 			
-				
+				// Connect to Database
 				Class.forName("com.mysql.jdbc.Driver");
 				con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3308/DocManagement","root","");
 				System.out.println("Database Successfully Connected");
@@ -30,7 +30,7 @@ public class DoctorRepository {
 	}
 	
 	
-	
+	//View all Added Doctors from Database
 	public List<Doctor> getDoctor() {
 		
 		List<Doctor> doctors = new ArrayList<>(); 
@@ -69,7 +69,7 @@ public class DoctorRepository {
 	}
 	
 	
-	
+	// View Doctor Using Id
 	public Doctor getDoctor(int ID) {
 		
 		String sql = "select * from DoctorTb where ID ="+ID; 
@@ -104,7 +104,7 @@ public class DoctorRepository {
 	}
 
 
-	
+	//Insert Doctors details to Database
 	public void create(Doctor a1) {
 		
 		String sql = "insert into DoctorTb value(?,?,?,?,?,?,?,?,?,?,?,?)"; 
@@ -134,7 +134,7 @@ public class DoctorRepository {
 	}
 
 
-	
+	//Update Doctor details
 	public void update(Doctor a1) {
 		
 	

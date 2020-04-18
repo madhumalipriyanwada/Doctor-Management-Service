@@ -19,7 +19,7 @@ public class Doctor {
 	private String JoinDate;
 	
 	
-	//Add Getters and Setters
+	
 	
 	public int getID() {
 		return ID;

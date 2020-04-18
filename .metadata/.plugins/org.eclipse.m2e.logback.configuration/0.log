@@ -586,3 +586,6 @@ java.io.FileNotFoundException: C:\Users\Administrator\.m2\repository\.cache\m2e\
 2020-04-18 16:11:10,550 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2020-04-18 16:11:10,552 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-04-18 16:11:10,553 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\Desktop\Doctor Management  Service\DoctorManagement\src\test\resources
+2020-04-18 16:18:51,331 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@bdbc113{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2020-04-18 16:18:51,332 [Stop Help Server] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+2020-04-18 16:18:51,349 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@522ab725{/help,null,UNAVAILABLE}

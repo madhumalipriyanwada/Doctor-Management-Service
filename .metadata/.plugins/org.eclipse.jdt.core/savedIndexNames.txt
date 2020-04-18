@@ -12,15 +12,15 @@ INDEX VERSION 1.131+C:\Users\Administrator\Desktop\Doctor Management  Service\.m
 235068211.index
 397075395.index
 3229950408.index
-1897519447.index
 962072171.index
+1897519447.index
 3263126981.index
 3414773057.index
 2437761691.index
 3786962001.index
 3513509091.index
-2630026684.index
 43387698.index
+2630026684.index
 3657162999.index
 1902699556.index
 3680180022.index
@@ -33,7 +33,6 @@ INDEX VERSION 1.131+C:\Users\Administrator\Desktop\Doctor Management  Service\.m
 3844155231.index
 2475089998.index
 3173873715.index
-737739556.index
 1079524478.index
 1675224961.index
 4058173672.index

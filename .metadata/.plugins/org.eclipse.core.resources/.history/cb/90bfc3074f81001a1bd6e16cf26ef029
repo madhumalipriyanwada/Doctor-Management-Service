@@ -18,7 +18,7 @@ public class Doctor {
 	private String RegHospital;
 	private String JoinDate;
 	
-	//commit example
+	
 	//Add Getters and Setters
 	
 	public int getID() {

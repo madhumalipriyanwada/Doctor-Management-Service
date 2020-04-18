@@ -21,7 +21,7 @@ public class DoctorResource {
 	
 	//View Doctors
 	@GET
-	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML}) //File Type
+	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public List<Doctor> getDoctor() {
 		
 		System.out.println("View Doctors Successfully...");
@@ -31,8 +31,8 @@ public class DoctorResource {
 	
 	//View one Doctor using ID 
 	@GET
-	@Path("doctor/{id}") //set path
-	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML}) //File Type
+	@Path("doctor/{id}")
+	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	
 	public Doctor getDoctor(@PathParam("id") int id) {
 		
@@ -43,8 +43,8 @@ public class DoctorResource {
 	
 	//Add Doctor
 	@POST
-	@Path("doctor") //set path
-	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML}) //File Type
+	@Path("doctor")
+	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public Doctor CreateDoctor(Doctor a1) {
 		System.out.println(a1);
 		repo.create(a1);
@@ -56,8 +56,8 @@ public class DoctorResource {
 	
 	//Update Doctor Details
 	@PUT
-	@Path("doctor") //set path
-	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML}) //File Type
+	@Path("doctor")
+	@Consumes({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
 	public Doctor UpdateDoctor(Doctor a1) {
 		
 		System.out.println(a1);
@@ -79,7 +79,7 @@ public class DoctorResource {
 	
 	//Delete Doctor
 	@DELETE
-	@Path("doctor/{ID}") //set path
+	@Path("doctor/{ID}")
 	public Doctor DeleteDoctor(@PathParam("ID") int ID) {
 		
 		Doctor a = repo.getDoctor(ID);
